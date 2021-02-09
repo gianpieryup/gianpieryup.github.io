@@ -1,0 +1,148 @@
+/* Resets*/
+
+*{
+box-sizing: border-box;
+}
+ul,ol{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilos Generales*/
+body{
+  background-image: url(../images/bg-body.png);
+}
+.container{
+  margin: 0 auto;
+}
+.main-header, .main-footer{
+  text-align: center;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+.logo{
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.main-nav li,
+.main-footer li{
+  background: #444;
+  margin-bottom: 1px;
+}
+.main-nav a,
+.main-footer a{
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 7px 0;
+}
+.toggle-nav{
+  display: block;
+  margin-top: 10px;
+}
+.fa-bars{
+  color: #fff;
+  background-color: #444;
+  padding: 4px 6px;
+}
+.banner{
+  display: none;
+}
+
+/* Productos*/
+.product{
+  margin-bottom: 30px;
+}
+.photo-container{
+  position: relative;
+}
+.photo{
+  width: 100%;
+}
+.special{
+  position: absolute;
+  top:0;
+  right: 10px;
+}
+.zoom{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  text-align: center;
+}
+.more{
+  color:#fff;
+  background-color: #444;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+@media (min-width:992px) {
+  .container{
+    max-width: 960px;
+  }
+  .toggle-nav{
+    display: none;
+  }
+  .main-nav ul{
+    overflow: hidden;
+  }
+  .main-nav li{
+    float: left;
+    margin-bottom: 0;
+    width: 15.254%;
+    margin-right: 1.694%;
+  }
+  .main-nav li:last-child{
+    margin-right: 0;
+  }
+  .banner{
+    display: block;
+  }
+  .banner img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .vip-products{
+    overflow: hidden;
+  }
+  .product{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .product:nth-child(even){
+    margin-right: 0;
+  }
+}
+@media (min-width:1200px) {
+  .container{
+    max-width: 1100px;
+  }
+  .product{
+    width: 32.20%;
+    margin-right: 1.694%;
+  }
+  .product:nth-child(even){
+    margin-right: 1.694%;
+  }
+  .product:nth-child(3n){
+    margin-right: 0;
+  }
+
+}
+
+
+
+
+/**/

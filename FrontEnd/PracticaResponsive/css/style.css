@@ -1,0 +1,109 @@
+/* Reset General*/
+*{
+  box-sizing: border-box;
+}
+ul, ol{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+body{
+    background-image: url(../images/bg-body.png);
+}
+.container{
+  margin: 0 auto;
+}
+.main-header, .main-footer{
+  text-align: center;
+}
+.logo{
+border-radius: 50%;
+border: 1px solid #ccc;
+}
+.fa-bars{
+  color: #fff;
+  background-color: #444;
+  padding: 4px 6px;
+}
+.toggle-nav{
+ display: block;
+ margin-top: 10px;
+}
+.main-nav a,.main-footer a{
+  text-transform: uppercase;
+  display: block;/*convierto de inline a block*/
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-bottom: 0.25%;
+  padding: 7% 0;
+
+}
+
+.banner{
+  display: none;
+}
+
+.photo-container{
+  overflow: hidden;
+  position: relative;
+}
+.special{
+  float: left;
+  top: 0;
+  right: 2%;
+  position: absolute;
+
+}
+.photo{
+  width: 100%;
+}
+.zoom{
+  /*display: block;  /*de mas*/
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  float: left;
+  top: 50%;
+  padding: 1%;
+  text-transform: uppercase;
+}
+.product{
+  overflow: hidden;
+  position: relative;
+}
+.more {
+/*  text-transform: uppercase;*/
+  font-size: 120%;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+/*TOMA COMO REFERNECIA A TODA LA CAJA GRANDE SERIA LA product*/
+  padding: 5px;
+  margin: 10px 0;
+}
+
+@media(min-width:992px){
+.container{
+  max-width: 960px;
+}
+.toggle-nav{
+  display: none;
+}
+.main-nav li{
+  float: left;
+}
+.banner{
+  display:block;
+}
+.banner img{
+  width: 100%;
+}
+}

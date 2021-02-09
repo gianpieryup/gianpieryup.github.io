@@ -1,0 +1,117 @@
+/*## Colores
+	#c7c7c7 | gris.
+	#508fb8 | celeste.
+*/
+
+/*reset generales*/
+*{
+box-sizing: border-box;
+}
+ul,ol{
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  background-image: url(../images/bg-body.png);
+  text-align: center;
+}
+.container{
+  margin: 30px;
+  border: 1px solid #c7c7c7 ;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 3%;
+  padding: 20px 20px;
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap
+}
+.card-image{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.foto{
+  border-radius: 50%;/*no se porque no funciona con im*/
+ width: 100%;
+  display: flex;
+}
+.social-media{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+li{/*lo hacemos una bola*/
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;/*lo hacemos una bola*/
+  background-color: #508fb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media a{  /*Hacelo directo en el a ----*/
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+/*Card-data y sus elementos*/
+.card-data{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.card-data a, .card-data h2, .card-data p{
+display: flex;
+}
+.card-data a{
+  background-color: #c7c7c7 ;
+  color: white;
+  padding: 8px;
+  width: 90px;
+}
+@media (min-width:720px) {
+ .container{
+    flex-direction: row;
+    justify-content:space-between;
+ }
+ .card{
+     width: 46%;
+ }
+}
+@media (min-width:960px) {
+  .card-image{
+    width: 30%;
+    justify-content: center;
+  }
+  .card-data{
+    width: 60%;
+  }
+  .card{
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  li{/*lo hacemos una bola*/
+    height: 30px;
+    width: 30px;
+  }
+}
