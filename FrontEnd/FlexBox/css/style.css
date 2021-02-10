@@ -59,20 +59,9 @@ body{
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 0;
 }
-li{/*lo hacemos una bola*/
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;/*lo hacemos una bola*/
-  background-color: #508fb8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-media a{  /*Hacelo directo en el a ----*/
-  display: flex;
-  color: rgb(255, 255, 255);
-}
+
 /*Card-data y sus elementos*/
 .card-data{
   text-align: left;
