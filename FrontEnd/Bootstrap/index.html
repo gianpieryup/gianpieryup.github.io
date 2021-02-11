@@ -8,8 +8,8 @@
     <title>BOOOB</title>
   </head>
   <body>
-<div class="container-fluid">
-  <header>
+
+  <header class="p-4 d-flex justify-content-between" style="background-color: #374957; color: white;">
     <h2>FREELANCE PORTFOLIO</h2>
       <ul class="nav nav-tabs">
         <li class="nav-item dropdown">
@@ -20,73 +20,107 @@
                       <a class="dropdown-item" href="#">Something else here</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Separated link</a>
-                    </div></li>
-                      <li class="nav-item">
-                            <a class="nav-link" href="#">PORTFOLIO</a></li>
-                      <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a></li>
-                      <li class="nav-item">
-                            <a class="nav-link" href="#">CONTAC</a></li>
+                    </div>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="#">PORTFOLIO</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="#">CONTAC</a>
+        </li>
       </ul>
   </header>
 
   <main>
-    <div class="presentacion">
-      <img src="img/profile.png" alt="">
-      <p class="titulos-grandes">FREELANCE PORTFOLIO</p>
-      <i class="fas fa-minus"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-minus"></i>
-      <p>Web Developer - Graphic Artist - User Experiencie Designer</p>
-    </div>
-
-    <section class="portfolio">
-      <h2>PORTFOLIO</h2>
-      <p>LOGO-ESTRELLA</p>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo"src="img/portfolio/cabin.png" width="300px">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo"src="img/portfolio/cake.png" width="300px">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo"src="img/portfolio/circus.png" width="300px">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo" src="img/portfolio/game.png" width="300px">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo" src="img/portfolio/safe.png" width="300px">
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-              <img class="photo" src="img/portfolio/submarine.png" width="300px">
-          </div>
-        </div>
+    <!--           [PRESENTACION]             -->
+    <section class="text-center pt-5 pb-5" style="background-color: #18bc9c; color:white">
+      <img src="img/profile.png">
+      <h1>FREELANCE PORTFOLIO</h1>
+      <div class="text-center m-2 pb-2">
+        <img src="icons/blanco.png" width="320px">
+      </div>
+      <h4>Web Developer - Graphic Artist - User Experiencie Designer</h4>
     </section>
 
-    <section class="about">
-      <h2>ABOUT</h2>
-      <i class="fas fa-star"></i>
-      <section class="parrafo-about">
-        <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p class="text-left mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-      <!--Botom-->
-      <div class="bottom-download">
-        <img src="icons/download.png" class="icon-bottom">
-        <div>Download Now!</div>
+    <!--           [PORTFOLIO]             -->
+    <!-- IMPORTANTE: Para centrar algo "container" -->
+    <section class="container mt-5">
+      <h1 class="text-center font-weight-bold">PORTFOLIO</h1>
+      <div class="text-center m-1">
+        <img src="icons/negro.png" width="320px">
+      </div>
+      
+      <!-- IMPORTANTE: justify-content-center esto para que se centre en m-l-xs -->
+      <div class="d-flex flex-wrap justify-content-center">
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/cabin.png" width="350px">
+          </div>
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/cake.png" width="350px">
+          </div>
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/circus.png" width="350px">
+          </div>
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/game.png" width="350px">
+          </div>
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/safe.png" width="350px">
+          </div>
+          <div class="m-2">
+              <img class="photo" src="img/portfolio/submarine.png" width="350px">
+          </div>
       </div>
     </section>
 
-    <section class="contac me">
-      <p>CONTAC ME</p>
-      <p>LOGO-ESTRELLA</p> 
-      <p>bottom de SEND</p>
+    <!--           [ABOUT]             -->
+    <section class="mt-5 pt-5 pb-5" style="background-color: #18bc9c; color:white">
+      <h1 class="text-center font-weight-bold pb-2">ABOUT</h1>
+      <div class="text-center m-2 pb-2">
+        <img src="icons/blanco.png" width="320px">
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center">
+        <p class="col-12 col-md-6 col-lg-4 text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="col-12 col-md-6 col-lg-4 text-left mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!--Botom-->
+      <div class="text-center">
+        <button type="button" class="btn btn-outline-light">
+          <img style="padding-bottom: 5px;" src="icons/download.png" width="15px">
+          <span>Download Now!</span>
+        </button>
+      </div>
+      
+    </section>
+
+    <!--           [CONTACT ME]             -->
+    <section class="mt-5 pb-5">
+      <h1 class="text-center font-weight-bold pb-2">CONTACT ME</h1>
+      <div class="text-center m-2 pb-4">
+        <img src="icons/negro.png" width="320px">
+      </div>
+
+      <div class="container col-12 col-sm-6">
+        <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control"  placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+            <input type="number" class="form-control"  placeholder="Phone Number">
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control"  placeholder="Message">
+        </div>
+      </div>
     </section>
   </main>
- <!-- Aca todo es con BOOSTRAP-->
+
  <!-- d-md-flex : display:flex a partir de md / osea md(>= 768px) es flex / mas propiedades FLEX incorporadas en boostrap--> 
   <footer style="background-color: #374957;" class="text-center d-md-flex p-2 justify-content-around">
     <div class="container mt-3 mb-3" style="width: 310px; color: white;">
@@ -113,7 +147,7 @@
       Freelance is free and open source landing page theme created to <span style="color: rgba(0, 255, 179, 0.884)">your free personal use.</span>     
     </div>
   </footer>
-</div>
+
 
 <!--Documentacion de bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
