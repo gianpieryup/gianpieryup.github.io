@@ -8,7 +8,7 @@
     <title>BOOOB</title>
   </head>
   <body>
-<div class="container-fluid">
+
   <header>
     <h2>FREELANCE PORTFOLIO</h2>
       <ul class="nav nav-tabs">
@@ -41,12 +41,16 @@
     </div>
 
 
+    <!--           [PORTFOLIO]             -->
     <!-- IMPORTANTE: Para centrar algo "container" -->
     <section class="container">
-      <h2 class="text-center">PORTFOLIO</h2>
-      <p>LOGO-ESTRELLA</p>
+      <h2 class="text-center font-weight-bold">PORTFOLIO</h2>
+      <div class="text-center m-1">
+        <img src="icons/negro.png" width="350px">
+      </div>
       
-      <div class="d-flex flex-wrap justify-content-evenly">
+      <!-- IMPORTANTE: justify-content-center esto para que se centre en m-l-xs -->
+      <div class="d-flex flex-wrap justify-content-center">
           <div class="m-2">
               <img class="photo" src="img/portfolio/cabin.png" width="350px">
           </div>
@@ -68,9 +72,13 @@
       </div>
     </section>
 
-    <section class="about">
-      <h2>ABOUT</h2>
-      <i class="fas fa-star"></i>
+    <!--           [ABOUT]             -->
+    <section style="background-color: #18bc9c; color:white">
+      <h2 class="text-center font-weight-bold">ABOUT</h2>
+      <div class="text-center m-1">
+        <img src="icons/blanco.png" width="350px">
+      </div>
+
       <section class="parrafo-about">
         <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
@@ -116,7 +124,7 @@
       Freelance is free and open source landing page theme created to <span style="color: rgba(0, 255, 179, 0.884)">your free personal use.</span>     
     </div>
   </footer>
-</div>
+
 
 <!--Documentacion de bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
