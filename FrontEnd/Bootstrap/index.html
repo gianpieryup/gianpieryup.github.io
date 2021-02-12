@@ -9,27 +9,25 @@
   </head>
   <body>
 
-  <header class="p-4 d-flex justify-content-between" style="background-color: #374957; color: white;">
-    <h2>FREELANCE PORTFOLIO</h2>
-      <ul class="nav nav-tabs">
-        <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">MENU</a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
+  <header class="p-4 d-sm-flex justify-content-between" style="background-color: #374957; color: white;">
+    <h2 class="font-weight-bold">FREELANCE PORTFOLIO</h2>
+      <ul class="nav font-weight-bold"> <!-- nav-tabs  esta clase le da un coso-->
+        <li class="nav-item dropdown d-sm-none">
+              <a class="nav-link dropdown-toggle" style="color:white; background-color: #18bc9c; border-radius:4px;" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">MENU</a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">PORTFOLIO</a>
+                  <a class="dropdown-item" href="#">ABOUT</a>
+                  <a class="dropdown-item" href="#">CONTACT</a>
+              </div>
         </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">PORTFOLIO</a>
+        <li class="d-none d-sm-block">
+              <a class="nav-link">PORTFOLIO</a>
         </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+        <li class="d-none d-sm-block">
+              <a class="nav-link">ABOUT</a>
         </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">CONTAC</a>
+        <li class="d-none d-sm-block">
+              <a class="nav-link">CONTACT</a>
         </li>
       </ul>
   </header>
@@ -38,7 +36,7 @@
     <!--           [PRESENTACION]             -->
     <section class="text-center pt-5 pb-5" style="background-color: #18bc9c; color:white">
       <img src="img/profile.png">
-      <h1>FREELANCE PORTFOLIO</h1>
+      <h1 class="font-weight-bold">FREELANCE PORTFOLIO</h1>
       <div class="text-center m-2 pb-2">
         <img src="icons/blanco.png" width="320px">
       </div>
@@ -117,12 +115,14 @@
         <div class="mb-3">
             <input type="text" class="form-control"  placeholder="Message">
         </div>
+        <button type="button" class="btn btn-primary mt-4" style="background-color: #18bc9c;">Send</button>
       </div>
+      
     </section>
   </main>
 
  <!-- d-md-flex : display:flex a partir de md / osea md(>= 768px) es flex / mas propiedades FLEX incorporadas en boostrap--> 
-  <footer style="background-color: #374957;" class="text-center d-md-flex p-2 justify-content-around">
+  <footer style="background-color: #374957;" class="text-center mt-4 d-md-flex p-2 justify-content-around">
     <div class="container mt-3 mb-3" style="width: 310px; color: white;">
       <p class="font-weight-bold">LOCATION</p> 
       2215 John Daniel Drive <br>
@@ -134,9 +134,9 @@
 
       <div class="d-flex justify-content-around">
         <img class="d-block" src="icons/facebook_gris.png" style="border: 2px solid white; border-radius: 50%;" width="40">
-        <img class="d-block" src="icons/facebook_gris.png" style="border: 2px solid white; border-radius: 50%;" width="40">
-        <img class="d-block" src="icons/facebook_gris.png" style="border: 2px solid white; border-radius: 50%;" width="40">
-        <img class="d-block" src="icons/facebook_gris.png" style="border: 2px solid white; border-radius: 50%;" width="40">
+        <img class="d-block" src="icons/google-plus.png" style="border: 2px solid white; border-radius: 50%;" width="40">
+        <img class="d-block" src="icons/twitter.png" style="border: 2px solid white; border-radius: 50%;" width="40">
+        <img class="d-block" src="icons/linkedin.png" style="border: 2px solid white; border-radius: 50%;" width="40">
         <img class="d-block" src="icons/facebook_gris.png" style="border: 2px solid white; border-radius: 50%;" width="40">
       </div>
 
@@ -147,7 +147,9 @@
       Freelance is free and open source landing page theme created to <span style="color: rgba(0, 255, 179, 0.884)">your free personal use.</span>     
     </div>
   </footer>
-
+  <div class="text-center p-4" style="background-color:black; color:white;">
+    Copyright &copy; Your Website 2018
+  </div>
 
 <!--Documentacion de bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
