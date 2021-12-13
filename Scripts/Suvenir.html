@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Suvenir</h2>
+    <h3>Input</h3>
+    <div class="form-group">
+        <textarea class="form-control input" placeholder="Description"></textarea>
+        <button class="btn">Enviar</button>
+    </div>
+
+    <h3>Resultado</h3>
+    <div class="form-group">
+        <textarea class="form-control output" placeholder="Description"></textarea>
+    </div>
+    <br><br>
+    <footer>Version 1.0  13 diciembre 2021</footer>
+    
+    <script>
+        // -------  Metodos abreviados para el DOM  --------
+        const log = console.log
+        const q = document.querySelector.bind(document)
+        // -------------------------------------------------
+
+        const texInput = q('.input')
+        const textRes = q('.output')
+        const btn = q('.btn')
+
+        btn.onclick=miFuncion
+
+        function miFuncion(){
+            log("CLICK")
+            let str = texInput.value
+            str = str.split(',')
+
+            res = []
+            str.forEach(e => {
+                res.push({"name":e,"type":"string"})
+            });
+            textRes.value = JSON.stringify(res,null,' ')
+        }
+    </script>
+</body>
+</html>
